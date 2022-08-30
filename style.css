@@ -1,0 +1,204 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    /* by default browser takes some margin and padding
+    set margin and padding is eqaul to zero  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* set font-family in our website */
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* set background image of the website*/
+body{
+    background:url(./images/car-bg\ \(1\).jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* start css coding for header section  */
+header{
+    width:100vw;
+    background-color: transparent;
+    position: relative;
+}
+/* coding for navigation link */
+.header .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:80vw;
+    margin:0 auto;
+    padding:2rem 1rem;
+}
+.header .navigation .logo{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    color:white;
+}
+
+.header .navigation ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    gap:2rem;
+}
+.header .navigation ul li a{
+    font-size:1.5rem;
+    text-decoration:none;
+    transition:0.33s ease-in-out;
+    color: white;
+}
+/* it is hovering effect on nav-link */
+.header .navigation ul li a:hover{
+    background-color: rgba(161, 159, 159, 0.46);
+    padding:0.5rem 1rem;
+    transition:0.33s ease-in-out;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.header .navigation ul li .btn{
+   background-color: rgb(17, 186, 253);
+   padding:0.8rem;
+   font-size:1.5rem;
+   margin:0 auto;
+   color:white;
+   border:none;
+   border-radius: 5px;
+   transition: 0.33s ease-in-out;
+}
+/* hovering effect on nav-booking button */
+.header .navigation ul li .btn:hover{
+   background-color:white;
+   color:black;
+   transition: 0.33s ease-in-out;
+   font-weight: 400;
+   cursor:pointer;
+}
+/* navigation-bar icon  for device-with less than 769 px */
+.header .navigation .nav-link span i{
+    color:white;
+    font-size: 2rem;
+    margin:1.5rem auto;
+    cursor: pointer;
+    text-align: right;
+    display:none;
+}
+
+
+/* here we are starting main-section of body */
+.top-section{
+    width:100vw;
+    position:relative;
+    height: 80vh;
+}
+.top-section .body-content{
+   position: absolute;
+   top:45%;
+   left:20%;
+}
+.top-section .body-content h1{
+    color: rgb(17, 186, 253);
+    font-size:4rem;
+    margin-bottom: 2rem;
+}
+.top-section .body-content p{
+    color:white;
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+.top-section .body-content .btn{
+    background-color: rgb(17, 186, 253);
+    padding:0.8rem 2rem;
+    font-size:2rem ;
+    margin:0 auto;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    transition: 0.33s ease-in-out;
+}
+.top-section .body-content .btn:hover{
+    background-color:white;
+    color:black;
+    transition: 0.33s ease-in-out;
+    font-weight: 400;
+    cursor:pointer;
+}
+
+/* here we are starting footer section */
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+}
+
+.footer-container{
+    max-width:60vw;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin:0 auto;
+}
+.footer-container .footer-content{
+  padding:2.5rem ;
+}
+.footer-container .footer-content a{
+    color:rgb(17, 186, 253);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.footer-container .footer-content a:hover{
+
+}
+.footer-container .footer-content p{
+    color:white;
+    font-size:1.1rem;
+}
+
+
+/* media query for device-with <=768px  responsiveness */
+@media only screen and (max-device-width:768px){
+
+    /* media query for navigation-bar icon */
+    .header .navigation .nav-link span i{
+        display:block;
+    } 
+    header .navigation .nav-link ul {
+        display:block;
+    }
+    header .navigation .nav-link ul{
+        display:none;
+    }
+
+    /* media query for footer section  */
+   footer {
+    height:6rem;
+    width:100vw;
+    background-color: blue;
+    
+   }
+   footer .footer-container{
+    max-width:100vw;
+    margin:0 auto;
+    display:flex;
+    gap:0.5rem;
+   }
+   footer .footer-container .footer-content{
+    padding:3rem 0.5rem ;
+    text-align: left;
+    font-size: 0.5rem;
+   }
+}

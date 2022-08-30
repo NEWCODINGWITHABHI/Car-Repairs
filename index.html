@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="India No-1 Car Repairs Company">
+    <meta name="keywords" content="Car Repairs , Parts ,Accessorie etc">
+    <meta name="author" content="Abhishek Kumar Sahni">
+    <title>CAR | Repairs</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/513e0295a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header section with navigation bar is starting -->
+    <header class="header">
+        <nav class="navigation">
+            <!-- left content of header navigation -->
+            <div class="logo">
+                <i class="fa-solid fa-car"></i>
+                <h2>Automotive</h2>
+            </div>
+            <!-- right content of header navigation  -->
+            <div class="nav-link">
+           <span>
+             <i class="fa-solid fa-bars"onlick="myfunction()"></i>
+           </span>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button class="btn">Book Appoinment</button></li>
+          </ul>
+       </div>
+     </nav>
+    </header>
+    
+    <!-- content of the body  -->
+    <main>
+        <section class="top-section">
+            <div class="body-content">
+             <h1>Your Card Repairs</h1>
+             <p>Visit us for your service</p>
+             <div>
+             <button class="btn">Book Appointment</button>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer content -->
+    <footer>
+        <div class="footer-container">
+       <div class="footer-content">
+        <a href="https://g.page/Airtel_Mobile_Tower?share">Our Location</a>
+         <p>15 Street Suburt Colony 6000</p>
+       </div>
+       <div class="footer-content">
+       <a href=" tel:+61 040 400 4000">Phone</a>
+       <p>+61 040 400 4000</p>
+       </div>
+       <div class="footer-content">
+        <a href="mailto:abhishekkumar01021995@gmail.com">Email</a>
+        <p>automotive@carsales.com.au</p>
+       </div>
+    </div>
+    </footer>
+
+
+    <!-- JS code  for navigation-bar icon for device-width <=768px -->
+    <script>
+        function myfunction(){
+        var x=document.getElementById("menu");
+        if(x.style.display==="block"){
+            x.style.display="none";
+        }
+        else{
+            x.style.display="block";
+        }
+        }
+    </script>
+</body>
+</html>
